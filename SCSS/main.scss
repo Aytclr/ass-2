@@ -1,7 +1,13 @@
-@import './abstracts/mixins','./abstracts/variable';
-@import './base/reset';
-@import './pages/about','./pages/contact','./pages/home','./pages/project';
-@import './components/footer','./components/nav','./components/responsive';
+@use './abstracts/mixins';
+@use'./abstracts/variable';
+@use './base/reset';
+@use './pages/about';
+@use'./pages/contact';
+@use'./pages/home';
+@use'./pages/project';
+@use './components/footer';
+@use'./components/nav';
+@use'./components/responsive';
 
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css';
 
@@ -9,16 +15,16 @@
 
 
 body{
-    font-family: $font-family;
-    background-color: $primary-color;
+    font-family: variable.$font-family;
+    background-color: variable.$primary-color;
     height: 100vh;
     line-height: 1;
-    color: $text-color;
+    color: variable.$text-color;
 
 }
 
 a{
-    color: $text-color;
+    color: variable.$text-color;
     text-decoration: none;
 
 }

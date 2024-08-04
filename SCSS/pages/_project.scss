@@ -1,8 +1,12 @@
 
 
+@use '../abstracts/mixins';
+@use '../abstracts/variable';
+
+
 .project-bgImg-container{
     // border: 2px solid red;
-    @include bgImg(40vh, $pathname1);
+    @include mixins.bgImg(40vh, variable.$pathname1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,7 +33,7 @@
     &__item{
         width: 33%;
         cursor: pointer;
-        border-bottom: 5px solid $secondary-color;
+        border-bottom: 5px solid variable.$secondary-color;
         position: relative;
 
         img{
@@ -42,11 +46,11 @@
             content: '';
             width: 100%;
             height: 100%;
-            background-color: $secondary-color;
+            background-color: variable.$secondary-color;
             position: absolute;
             left: 0;
             opacity: 0;
-            @include soft(0.3s);
+            @include mixins.soft(0.3s);
         }
 
         &:hover::after{

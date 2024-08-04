@@ -1,3 +1,5 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variable';
 
 
 .nav{
@@ -19,16 +21,16 @@
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1rem;
-        font-family: $font-family;
+        font-family: variable.$font-family;
         font-weight: 500;
-        @include soft(.5s);
+        @include mixins.soft(.5s);
 
         &:hover{
             color: blue;
         }
 
         &--active{
-            color: $secondary-color;
+            color: variable.$secondary-color;
         }
     }
 
