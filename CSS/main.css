@@ -110,6 +110,40 @@ footer.vertical .social-icons {
   margin: 0.3rem;
 }
 
+.contact-bgImg-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/project-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.contact-bgImg-container .nav {
+  border: 2px solid red;
+  height: 40vh;
+}
+.contact-bgImg-container .contact {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-bgImg-container .contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact-bgImg-container .contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
+}
+.contact-bgImg-container .contact__list .text-secondary {
+  color: #ff652f;
+}
+
 .home-bgImg-container {
   height: 100vh;
   width: 100%;
