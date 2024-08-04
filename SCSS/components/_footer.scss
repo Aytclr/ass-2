@@ -2,6 +2,7 @@
 .link-style{
     a{
         padding: 0.4rem;
+        @include soft(1s);
         &:hover{
             color: $secondary-color;
         }

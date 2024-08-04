@@ -1,5 +1,5 @@
 .home-bgImg-container {
-    @include bgImg(100vh)
+    @include bgImg(100vh, $pathname1)
 }
 
 .home {

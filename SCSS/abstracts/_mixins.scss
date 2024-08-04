@@ -5,7 +5,7 @@
 }
 
 
-@mixin bgImg($height){
+@mixin bgImg($height, $path){
     height: $height;
     width: 100%;
     background: linear-gradient(
@@ -13,7 +13,7 @@
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3),
         ),
-    url(./../../img/model-1.jpg);
+    url($path);
     background-position: center;
     background-size: cover;
 }
