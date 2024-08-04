@@ -19,3 +19,26 @@
     line-height: 1.3;
   }
 }
+
+
+.about{
+    // border: 2px solid red;
+    width: 70%;
+    margin: 2rem auto;
+
+
+    &__job{
+        margin: 1rem;
+        background-color: lighten($color: $primary-color, $amount: 10%);
+        border-bottom: 5px solid $secondary-color;
+        border-radius: 5px;
+    }
+
+    h2,h3{
+        margin: 0.5rem;
+    }
+    h6{
+        margin: 0.3rem;
+    }
+}
+

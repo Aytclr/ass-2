@@ -74,6 +74,23 @@ footer.horizontal {
   line-height: 1.3;
 }
 
+.about {
+  width: 70%;
+  margin: 2rem auto;
+}
+.about__job {
+  margin: 1rem;
+  background-color: #414141;
+  border-bottom: 5px solid #ff652f;
+  border-radius: 5px;
+}
+.about h2, .about h3 {
+  margin: 0.5rem;
+}
+.about h6 {
+  margin: 0.3rem;
+}
+
 .home-bgImg-container {
   height: 100vh;
   width: 100%;
